@@ -1,0 +1,6 @@
+#This ignore the content of the directory %TEMP%/ for save storage.
+
+%TEMP%/**/*
+%TEMP%/bgFloatWindow.psd
+%TEMP%/codeOOP.txt
+%TEMP%/TECOBACOL PSD DESIGN.psd

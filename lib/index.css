@@ -1,0 +1,378 @@
+html, body{
+	 margin: 0;
+     padding: 0;
+     height: 100%;
+}
+body{
+	background: #ece55c;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+#dinamicContent{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	min-width: 348px;
+	min-height: 500px;
+	position: absolute;
+	display: none;
+	z-index: 1;
+	background: url('../img/bgFloatWindow.png');
+	text-align: center;
+}
+	#topBar{
+		background-color: #123654;
+		display: inline-block;
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		min-height: 8px;
+		height: 2.5%;
+		background-color: #ebeb6d;
+		z-index: 21;		
+		width: 60%;
+		margin: auto;
+		margin-top: 3%;
+		transition: .25s ease-out all;
+		-webkit-transition: .25s ease-out all;
+		-moz-transition: .25s ease-out all;
+		-ms-transition: .25s ease-out all;
+		-o-transition: .25s ease-out all;
+	}
+		.close{
+			font-size: 1.6em;
+			margin-top: -5px;
+			float: right;
+			cursor: pointer;
+			color: #212121;			
+			font-family: LatoLight, sans-serif;
+			margin-right: -30px;
+		}
+		.titleFloatWindow{
+			cursor: default;
+			font-family: LatoLight, sans-serif;
+			font-size:1.1em;
+			margin-left: -20px;
+		}
+	#floatWindow{
+		/*This rule specifies the float window*/
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 20px;
+		display: inline-block;
+		min-height: 25px;
+		height: 80%;
+		overflow: auto;
+		background-color: #ffffff;
+		z-index: 20;
+		width: 60%;
+		margin: auto;
+		box-shadow: 0 10px 5px #282828;
+		-webkit-box-shadow: 0 10px 5px #282828;
+		-moz-box-shadow: 0 10px 5px #282828;
+		-o-box-shadow: 0 10px 5px #282828;
+		box-shadow: inset 0px 10px 15px -5px #e3e3e3;
+		-webkit-box-shadow: inset 0px 10px 15px -5px #e3e3e3;
+		-moz-box-shadow: inset 0px 10px 15px -5px #e3e3e3;
+		-o-box-shadow: inset 0px 10px 15px -5px #e3e3e3;
+		transition: .25s ease-out all;
+		-webkit-transition: .25s ease-out all;
+		-moz-transition: .25s ease-out all;
+		-ms-transition: .25s ease-out all;
+		-o-transition: .25s ease-out all;
+	}
+		#floatWindow>div{
+			font-family: latoLight, sans-serif;
+			font-size: 1em;
+			display: none;
+		}
+#inner {
+     display: table;
+     height: 100%;
+     width: 100%;
+     min-width: 348px;
+     min-height: 500px;
+     margin: 0;
+}
+	#leftBar{
+		display: table-cell;
+		vertical-align: middle;
+	}
+		.leftBarButtons li{
+			/* This rule specefies the left bar size */
+			margin-left: 20px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			padding: 10px;
+			font-family: LatoLight, sans-serif;	
+			font-size: 26px;
+			color: #f3f78d;
+			background-color: #222222;
+			cursor: pointer;
+		}
+			.leftBarButtons li:hover{
+				color: #d0c5c6;
+				background-color: #443736;
+			}
+	#principal{
+		text-align: center;
+		display: table-cell;
+		vertical-align: middle;
+	}
+		.title1{
+			text-align: center;
+			display: inline-block;
+		}
+			.title1 img{
+				/* This rule specifies the image size */
+			}
+			.title1 span{
+				display: none;
+			}
+			.title1 ul li{
+				/* This rules specifies the inscription button size */
+				cursor: pointer;
+				text-align: center;
+				font-family: LatoLight, sans-serif;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				width: 300px;
+				color: #f3f78d;
+				font-size: 45px;
+				margin-top: 60px;
+				display: inline-block;
+				background-color: #222222;
+			}
+				.title1 ul li:hover{
+					color: #d0c5c6;
+					background-color: #443736;
+				}
+	#footer{
+		display: table-cell;
+		vertical-align: bottom;
+		padding-bottom: 20px;
+	}
+		.tecoba{
+			/* This rules specifies the logotipo size */
+			margin-right: 50px;
+			font-family: rondalo, sans-serif;
+			font-size: 46px;
+			color: #010101;
+		}
+
+/* Queries with popular resolution devices */
+@media (max-width: 1280px){
+	.close{
+		/*This rule specifies the "X" size*/
+		font-size: 1.3em;
+	}
+	.titleFloatWindow{
+		/*This rule specifies the size of the title of the float window*/
+		font-size:0.84em;
+	}
+	.leftBarButtons li{
+		/* This rule specefies the left bar size */
+		margin-left: 20px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		padding: 10px;
+		font-size: 18px;
+	}
+	#principal{
+		/* This rule specifies the div principal size and margins */
+		padding-left: 30px;
+	}
+	.title1 img{
+		/* This rule specifies the image size */
+		width: 850px;
+		height: 40px;
+	}
+	.title1 ul li{
+		/* This rules specifies the inscription button size */
+		padding-top: 5px;
+		padding-bottom: 5px;
+		width: 200px;
+		font-size: 25px;
+		margin-top: 40px;
+	}
+	#footer{
+		/* This rule specifies the distance from te bottom to the logo */
+		padding-bottom: 15px;
+	}
+	.tecoba{
+		/* This rules specifies the logotipo size */
+		margin-right: 35px;
+		font-size: 25px;
+	}
+}
+@media (max-width: 1024px){
+	.close{
+		/*This rule specifies the "X" size*/
+		font-size: 1.2em;
+	}
+	.titleFloatWindow{
+		/*This rule specifies the size of the title of the float window*/
+		font-size:0.75em;
+	}
+	.leftBarButtons li{
+		/* This rule specefies the left bar size */
+		margin-left: 10px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		padding: 10px;
+		font-size: 12px;
+	}
+	#principal{
+		/* This rule specifies the div principal size and margins */
+		padding-left: 30px;
+	}
+	.title1 img{
+		/* This rule specifies the image size */
+		width: 780px;
+		height: 35px;
+	}
+	.title1 ul li{
+		/* This rules specifies the inscription button size */
+		padding-top: 5px;
+		padding-bottom: 5px;
+		width: 125px;
+		font-size: 20px;
+		margin-top: 40px;
+	}
+	#footer{
+		/* This rule specifies the distance from te bottom to the logo */
+		padding-bottom: 10px;
+	}
+	.tecoba{
+		/* This rules specifies the logotipo size */
+		margin-right: 35px;
+		font-size: 30px;
+	}
+}
+@media (max-width: 960px){
+	html, body{
+		 margin: 0;
+	     padding: 0;
+	     height: auto;
+	}
+	#inner {
+	     display: block;
+	     height: auto;
+	     width: auto;
+	     margin: 0;
+	}
+	#leftBar{
+		display: block;
+		text-align: center;
+	}
+	.leftBarButtons li{
+		/* This rule specefies the left bar size */
+		display: inline-block;
+		margin-left: 10px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		padding: 10px;
+		font-size: 20px;
+	}
+	#principal{
+		/* This rule specifies the div principal size and margins */
+		padding-top: 55px;
+		padding-left: 0;
+		display: block;
+	}
+	.title1 img{
+		/* This rule specifies the image size */
+		width: 800px;
+		height: 40px;
+	}
+	.title1 ul li{
+		/* This rules specifies the inscription button size */
+		padding-top: 5px;
+		padding-bottom: 5px;
+		width: 215px;
+		font-size: 40px;
+		margin-top: 40px;
+	}
+	#footer{
+		/* This rule specifies the distance from te bottom to the logo */
+		padding-bottom: 10px;
+		display: block;
+		text-align: center;
+		padding-top: 50px;
+	}
+	.tecoba{
+		/* This rules specifies the logotipo size */
+		margin-right: 0;
+		font-size: 30px;
+	}
+}
+@media (max-width: 800px){
+	html, body{
+		 margin: 0;
+	     padding: 0;
+	     height: auto;
+	}
+	#inner {
+	     display: block;
+	     height: auto;
+	     width: auto;
+	     margin: 0;
+	}
+	#leftBar{
+		display: block;
+		text-align: center;
+	}
+	.leftBarButtons li{
+		/* This rule specefies the left bar size */
+		display: inline-block;
+		margin-left: 10px;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		padding: 10px;
+		font-size: 20px;
+	}
+	#principal{
+		/* This rule specifies the div principal size and margins */
+		padding-top: 55px;
+		padding-left: 0;
+		display: block;
+	}
+	.title1 img:nth-child(1){
+		/* This rule specifies the image size */
+		display: none;
+	}
+	.title1 span{
+		display: block;
+		font-family: latoLight, sans-serif;
+		font-size: 40px;
+	}
+	.title1 ul li{
+		/* This rules specifies the inscription button size */
+		padding-top: 5px;
+		padding-bottom: 5px;
+		width: 215px;
+		font-size: 40px;
+		margin-top: 40px;
+	}
+	#footer{
+		/* This rule specifies the distance from te bottom to the logo */
+		padding-bottom: 10px;
+		display: block;
+		text-align: center;
+		padding-top: 50px;
+	}
+	.tecoba{
+		/* This rules specifies the logotipo size */
+		margin-right: 0;
+		font-size: 30px;
+	}
+}
